@@ -1,0 +1,29 @@
+
+
+<h1>
+  {{ title }}
+</h1>
+<p>
+  {{ body }}
+	
+</p>
+<hr>
+  	
+<input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".jpg,.mp4,.gif"/>
+{{bkgImgSrc}}
+
+<hr>
+<p>Change the button  text: <input type="text" [(ngModel)]="buttonName" ></p>
+
+<!--<div [ngStyle]="{'background-image': 'url(' + bkgImgSrc + ')'}" [style.height.px]="437" [style.width.px]="863"> -->
+<div id="bodyBkg" style="background-image:url('button.jpg'); height:380px; width:1200px; border:solid 1px;">
+<button style="float:left; height:200px; width:200px; margin:10px 10px 10px 10px">	
+<div  id="img"   style="background-image:url('awesome.jpg'); height:190px; width:180px;">{{buttonName}}</div>
+ </button>
+ 
+<button style="float:left; height:200px; width:200px; margin:10px 10px 8px 10px">	
+<video  style="    margin-left: -6px; margin-top: -28px;"id="vid" width="200" height="200" controls><source src="shuttle.mp4" type="video/mp4"></video>
+ </button>
+ 
+</div>
+ 

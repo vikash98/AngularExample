@@ -1,0 +1,80 @@
+#header {
+  height: 64px;
+  background: #fff;
+  position: fixed;
+  header: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header h1#logo {
+  float: left;
+  margin: 0;
+}
+
+#header h1#logo a {
+  background: url(../images/logo.png) no-repeat top left;
+  width: 194px;
+  height: 48px;
+  margin: 8px;
+  display: block;
+  text-indent: -9999px;
+}
+
+#header .router-link-active {
+  color: #C83434;
+}
+
+#header .color {
+  display: block;
+  height: 4px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+#header #menu {float:left;padding:17px 40px 0 0;}
+
+#container {padding:100px 20px 20px 20px;}
+
+.color {
+  background-color: rgba(195, 30, 30, 0.9) !important;
+}
+
+.shadow {
+  background: url(../images/top-shadow.png) repeat-x;
+  height: 35px;
+  position: fixed;
+  top: 68px;
+  width: 100%;
+}
+#example2 {
+    border: 2px solid red;
+    border-radius: 50px 20px;
+}
+.octagonWrap {
+    width:200px;
+    height:200px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.octagon {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    overflow: hidden;
+    transform: rotate(45deg);
+    background: #777;
+    border: 3px solid red;
+}
+.octagon:before {
+    position: absolute;
+    /* There needs to be a negative value here to cancel
+     * out the width of the border. It's currently -3px,
+     * but if the border were 5px, then it'd be -5px.
+     */
+    top: -3px; right: -3px; bottom: -3px; left: -3px;
+    transform: rotate(45deg);
+    content: '';
+    border: inherit;
+}
